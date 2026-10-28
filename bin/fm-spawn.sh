@@ -699,6 +699,9 @@
 set -eu
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# Codex resolves a relative CODEX_HOME from its own cwd; pin it to the caller's
+# so the catalog checks and the worker launch read the same store.
+case "${CODEX_HOME:-}" in '' | /*) ;; *) export CODEX_HOME="$PWD/$CODEX_HOME" ;; esac
 
 usage() {
   # The whole leading comment block, ending at the first line that is not a
