@@ -1,0 +1,24 @@
+# Captured fm-spawn launch (gpt-6.1-terra ultra), caller CODEX_HOME=/home/everett/.codex
+warning: /tmp/fm-live.XPPlkp/terra/home/data/terra-ultra/launch-brief.md records no ship branch; defaulting to legacy branch fm/terra-ultra
+warning: /tmp/fm-live.XPPlkp/terra/home/data/terra-ultra/launch-brief.md records no delivery contract line (scaffolded before ship briefs recorded one); launching on the explicit --mode local-only - confirm its definition of done matches
+notice: terra-ultra ships mode=local-only while the standing posture for project is no-mistakes - less rigor than the captain's standing posture; proceed only on a current explicit captain instruction or an intake judgment you can state
+spawned terra-ultra harness=codex kind=ship mode=local-only yolo=off window=firstmate:fm-terra-ultra worktree=/tmp/fm-live.XPPlkp/terra/wt
+
+## launch command sent to pane
+export COMPACT_ADVISER_DISABLE=1; export CODEX_HOME='/home/everett/.codex'; export FM_TASK_INBOX='/tmp/fm-live.XPPlkp/terra/home/state/terra-ultra.inbox'; '/home/everett/.no-mistakes/worktrees/c0a06c949f51/01M61NMYYMV5QW14CV4T535SH1/bin/fm-git-strip-ai-trailers.sh' env-file '/tmp/fm-live.XPPlkp/terra/home/state/terra-ultra.git-hooks' '/tmp/fm-terra-ultra+c2c7844c704c1d2580108a85e944cb62b62a311e6508d108b2c584930509a665/git-config.s1793210643.2004008.18477.sh' && . '/tmp/fm-terra-ultra+c2c7844c704c1d2580108a85e944cb62b62a311e6508d108b2c584930509a665/git-config.s1793210643.2004008.18477.sh' || return 1 2>/dev/null || exit 1; env -u CURSOR_AGENT -u CURSOR_INVOKED_AS -u GEMINI_CLI codex --model 'gpt-6.1-terra' -c 'model_reasoning_effort="ultra"' --dangerously-bypass-approvals-and-sandbox --disable hooks -c "notify=[\"bash\",\"-c\",\"touch '/tmp/fm-live.XPPlkp/terra/home/state/terra-ultra.turn-ended'\"]" "$('/home/everett/.no-mistakes/worktrees/c0a06c949f51/01M61NMYYMV5QW14CV4T535SH1/bin/fm-operational-input.sh' encode launch-brief < '/tmp/fm-live.XPPlkp/terra/home/data/terra-ultra/launch-brief.md')"
+
+## state meta
+window=firstmate:fm-terra-ultra
+endpoint_task_id=terra-ultra
+worktree=/tmp/fm-live.XPPlkp/terra/wt
+project=/tmp/fm-live.XPPlkp/terra/project
+harness=codex
+approval_mode=bypass
+kind=ship
+mode=local-only
+yolo=off
+branch=fm/terra-ultra
+tasktmp=/tmp/fm-terra-ultra
+model=gpt-6.1-terra
+effort=ultra
+spawn_gen=s1793210643.2004008.18477

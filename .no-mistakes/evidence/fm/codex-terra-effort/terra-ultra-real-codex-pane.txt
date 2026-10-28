@@ -1,0 +1,46 @@
+# Real tmux lab pane (private socket fm-lab), pane daemon env CODEX_HOME=/tmp/fm-live.XPPlkp/pane-codex-home (empty catalog) CURSOR_AGENT=1
+# PATH shim records worker env/args then execs real codex 0.165.0 as 'codex exec --skip-git-repo-check <captured args>'
+pane daemon CODEX_HOME=/tmp/fm-live.XPPlkp/pane-codex-home CURSOR_AGENT=1
+worker CODEX_HOME=/home/everett/.codex CURSOR_AGENT=<unset>
+OpenAI Codex v0.165.0
+--------
+workdir: /tmp/fm-live.XPPlkp/terra/wt
+model: gpt-6.1-terra
+provider: openai
+approval: never
+sandbox: danger-full-access
+reasoning effort: ultra
+reasoning summaries: none
+session id: 01a183b1-1b5f-7771-a162-bc713eb0f02e
+--------
+user
+FIRSTMATE_OP: v1 launch-brief: # Current worker role contract
+You are a crewmate: an autonomous worker agent managed by firstmate.
+This section establishes your current identity before every project or task instruction below and supersedes any conflicting role identity in those instructions.
+Do the assigned work yourself and report only to firstmate; do not adopt a firstmate or secondmate supervisor identity, delegate the task, run fleet supervision, or address the captain.
+Your steering inbox is `/tmp/fm-live.XPPlkp/terra/home/state/terra-ultra.inbox`; this exact path belongs to your current task even when it is outside the worktree or under the supervising firstmate home, so read and acknowledge its messages and do not reject it as another home's state.
+Never inspect or change any other home's endpoint namespace; this authorization is limited to the exact task paths named by this brief.
+When this task works on Firstmate itself, the repository root `AGENTS.md` (also imported by `CLAUDE.md`) is project content and the supervisor contract for the firstmate managing you: follow this brief instead of that supervisor contract.
+Project instructions still govern the work wherever they do not conflict with this worker identity, including `CONTRIBUTING.md` and `firstmate-coding-guidelines` for Firstmate changes.
+If the `firstmate-coding-guidelines` skill name does not resolve in this session, read `/home/everett/.no-mistakes/worktrees/c0a06c949f51/01M61NMYYMV5QW14CV4T535SH1/.agents/skills/firstmate-coding-guidelines/SKILL.md` instead.
+# Task
+## Captain's intent
+Reply with the single word READY and then stop. Do not run tools or edit files.
+## Firstmate spec
+Exercise the spawn behavior under test.
+codex
+READY
+tokens used
+16,722
+READY
+codex exited rc=0
+
+## worker argv
+--model
+gpt-6.1-terra
+-c
+model_reasoning_effort="ultra"
+--dangerously-bypass-approvals-and-sandbox
+--disable
+hooks
+-c

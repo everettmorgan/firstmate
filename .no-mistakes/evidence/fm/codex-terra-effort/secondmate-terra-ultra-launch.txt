@@ -1,0 +1,9 @@
+# fm-spawn --secondmate --harness codex --model gpt-6.1-terra --effort ultra (caller CODEX_HOME=/home/everett/.codex)
+warning: secondmate sm-terra sync skipped before launch: primary default-branch commit cannot be resolved
+spawned sm-terra harness=codex kind=secondmate mode=secondmate yolo=off window=firstmate:fm-sm-terra worktree=/tmp/fm-live.XPPlkp/sm/smhome
+
+export COMPACT_ADVISER_DISABLE=1
+ export CODEX_HOME='/home/everett/.codex'
+ export FM_TASK_INBOX='/tmp/fm-live.XPPlkp/sm/home/state/sm-terra.inbox'
+ '/home/everett/.no-mistakes/worktrees/c0a06c949f51/01M61NMYYMV5QW14CV4T535SH1/bin/fm-git-strip-ai-trailers.sh' env-file '/tmp/fm-live.XPPlkp/sm/home/state/sm-terra.git-hooks' '/tmp/fm-sm-terra+f58210475ca00c1cbe7d52d02fc4560c371856e6a576c1ae696d59a01fdd3a71/git-config.s1793210845.2012689.18760.sh' && . '/tmp/fm-sm-terra+f58210475ca00c1cbe7d52d02fc4560c371856e6a576c1ae696d59a01fdd3a71/git-config.s1793210845.2012689.18760.sh' || return 1 2>/dev/null || exit 1
+ FM_ROOT_OVERRIDE= FM_STATE_OVERRIDE= FM_DATA_OVERRIDE= FM_PROJECTS_OVERRIDE= FM_CONFIG_OVERRIDE= FM_PUBLIC_FOLLOWUP_PRIMARY_HOME='/tmp/fm-live.XPPlkp/sm/home' FM_HOME='/tmp/fm-live.XPPlkp/sm/smhome' FM_TRACE_CONTEXT=off FM_SUPERVISION_MODEL=persistent env -u CURSOR_AGENT -u CURSOR_INVOKED_AS -u GEMINI_CLI codex --model 'gpt-6.1-terra' -c 'model_reasoning_effort="ultra"' --dangerously-bypass-approvals-and-sandbox "$('/home/everett/.no-mistakes/worktrees/c0a06c949f51/01M61NMYYMV5QW14CV4T535SH1/bin/fm-operational-input.sh' encode launch-brief < '/tmp/fm-live.XPPlkp/sm/smhome/data/charter.md')"

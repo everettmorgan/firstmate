@@ -1,0 +1,60 @@
+### reverse-divergent: caller CODEX_HOME=/tmp/fm-live.XPPlkp/stale-home fm-spawn --model gpt-6.1-terra --effort ultra
+spawn rc=1
+meta exists: no
+launch bytes: 0
+error: codex ultra requires an explicit model advertising ultra in the installed Codex catalog
+effort in launch: <omitted>
+CODEX_HOME export: <none>
+
+### missing-catalog: caller CODEX_HOME=/tmp/fm-live.XPPlkp/nonexistent fm-spawn --model gpt-6.1-terra --effort ultra
+spawn rc=1
+meta exists: no
+launch bytes: 0
+error: codex ultra cannot be validated: the installed Codex model catalog /tmp/fm-live.XPPlkp/nonexistent/models_cache.json is unavailable
+effort in launch: <omitted>
+CODEX_HOME export: <none>
+
+### gpt5-ultra: caller CODEX_HOME=/home/everett/.codex fm-spawn --model gpt-5 --effort ultra
+spawn rc=1
+meta exists: no
+launch bytes: 0
+error: codex ultra requires an explicit model advertising ultra in the installed Codex catalog
+effort in launch: <omitted>
+CODEX_HOME export: <none>
+
+### default-ultra: caller CODEX_HOME=/home/everett/.codex fm-spawn --effort ultra
+spawn rc=1
+meta exists: no
+launch bytes: 0
+error: codex ultra requires an explicit model advertising ultra in the installed Codex catalog
+effort in launch: <omitted>
+CODEX_HOME export: <none>
+
+### terra-max: caller CODEX_HOME=/home/everett/.codex fm-spawn --model gpt-6.1-terra --effort max
+spawn rc=0
+meta exists: yes
+launch bytes: 1114
+effort in launch: model_reasoning_effort="max"
+CODEX_HOME export: export CODEX_HOME='/home/everett/.codex'
+
+### gpt5-max-omit: caller CODEX_HOME=/home/everett/.codex fm-spawn --model gpt-5 --effort max
+spawn rc=0
+meta exists: yes
+launch bytes: 1112
+effort in launch: <omitted>
+CODEX_HOME export: export CODEX_HOME='/home/everett/.codex'
+
+### luna-max-nocatalog: caller CODEX_HOME=/tmp/fm-live.XPPlkp/nonexistent fm-spawn --model gpt-5.6-luna --effort max
+spawn rc=0
+meta exists: yes
+launch bytes: 1214
+effort in launch: model_reasoning_effort="max"
+CODEX_HOME export: export CODEX_HOME='/tmp/fm-live.XPPlkp/nonexistent'
+
+### terra-high: caller CODEX_HOME=/home/everett/.codex fm-spawn --model gpt-6.1-terra --effort high
+spawn rc=0
+meta exists: yes
+launch bytes: 1083
+effort in launch: model_reasoning_effort="high"
+CODEX_HOME export: <none>
+
