@@ -1609,6 +1609,8 @@ The allowlist floor also retains Tern block markers `TERN_IDENTITY`, `TERN_PANE`
 
 Other ambient names must be listed explicitly, including custom credential-store locations, proxy settings, and certificate overrides when required by the selected tools.
 The command shell and worker may still create their own variables.
+Codex `max` and `ultra` require a known destination Codex home before launch.
+With this filter, only Orca's configured source below can supply one: an explicitly selected absolute `CODEX_HOME`, or an explicitly selected absolute `HOME` when `CODEX_HOME` is absent or unset.
 
 Unless the Orca environment source below is configured, allowed values come from the destination pane at execution time; they are neither copied from the invoking Firstmate process nor written into the launch command.
 Listing a name does not provision it in a daemon's environment or transfer credentials to another machine.
