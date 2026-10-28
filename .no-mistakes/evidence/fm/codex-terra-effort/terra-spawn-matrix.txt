@@ -1,0 +1,43 @@
+### fm-spawn.sh --mode no-mistakes --yolo off --model gpt-6.1-terra --effort ultra (CODEX_HOME=/home/everett/.codex)
+exit=0
+launch: codex --model 'gpt-6.1-terra' -c 'model_reasoning_effort="ultra"' --approve-for-me --disable hooks
+meta: harness=codex model=gpt-6.1-terra effort=ultra 
+
+### fm-spawn.sh --mode no-mistakes --yolo off --model gpt-6.1-terra --effort max (CODEX_HOME=/home/everett/.codex)
+exit=0
+launch: codex --model 'gpt-6.1-terra' -c 'model_reasoning_effort="max"' --approve-for-me --disable hooks
+meta: harness=codex model=gpt-6.1-terra effort=max 
+
+### fm-spawn.sh --mode no-mistakes --yolo off --model gpt-5 --effort ultra (CODEX_HOME=/home/everett/.codex)
+exit=1
+error: codex ultra requires an explicit model advertising ultra in the installed Codex catalog
+launch: (no launch)
+meta: (none published)
+
+### fm-spawn.sh --mode no-mistakes --yolo off --effort ultra (CODEX_HOME=/home/everett/.codex)
+exit=1
+error: codex ultra requires an explicit model advertising ultra in the installed Codex catalog
+launch: (no launch)
+meta: (none published)
+
+### fm-spawn.sh --mode no-mistakes --yolo off --model gpt-5 --effort max (CODEX_HOME=/home/everett/.codex)
+exit=0
+launch: codex --model 'gpt-5' --approve-for-me --disable hooks
+meta: harness=codex model=gpt-5 effort=max 
+
+### fm-spawn.sh --mode no-mistakes --yolo off --model gpt-6.1-terra --effort ultra (CODEX_HOME=/tmp/fm-terra-drive.6U5hUj/no-catalog)
+exit=1
+error: codex ultra cannot be validated: the installed Codex model catalog /tmp/fm-terra-drive.6U5hUj/no-catalog/models_cache.json is unavailable
+launch: (no launch)
+meta: (none published)
+
+### fm-spawn.sh --mode no-mistakes --yolo off --model gpt-5.6-luna --effort max (CODEX_HOME=/tmp/fm-terra-drive.6U5hUj/no-catalog)
+exit=0
+launch: codex --model 'gpt-5.6-luna' -c 'model_reasoning_effort="max"' --approve-for-me --disable hooks
+meta: harness=codex model=gpt-5.6-luna effort=max 
+
+### fm-spawn.sh --mode no-mistakes --yolo off --model gpt-6.1-terra --effort max (CODEX_HOME=/tmp/fm-terra-drive.6U5hUj/no-catalog)
+exit=0
+launch: codex --model 'gpt-6.1-terra' --approve-for-me --disable hooks
+meta: harness=codex model=gpt-6.1-terra effort=max 
+

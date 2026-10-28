@@ -1,0 +1,3 @@
+codex app-server argv: codex app-server -c model_reasoning_effort="ultra"
+thread/start result: model=gpt-6.1-terra reasoningEffort=ultra
+PASS

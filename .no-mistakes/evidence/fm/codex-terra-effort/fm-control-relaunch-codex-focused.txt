@@ -1,0 +1,2 @@
+ok - native Ultra relaunch preserves its profile and rejects an unsupported model before stopping
+ok - Codex max and ultra relaunch preserve supported profiles, omit unsupported max, and reject unsupported ultra before stopping
