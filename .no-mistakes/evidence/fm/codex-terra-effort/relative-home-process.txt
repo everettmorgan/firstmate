@@ -1,0 +1,2 @@
+/home/everett/.local/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/bin/codex --model gpt-6.1-terra -c model_reasoning_effort="ultra" --dangerously-bypass-approvals-and-sandbox --disable hooks
+CODEX_HOME=/tmp/fm-lab.PAZkJo/relcat

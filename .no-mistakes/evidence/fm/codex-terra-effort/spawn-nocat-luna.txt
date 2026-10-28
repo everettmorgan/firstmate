@@ -1,0 +1,4 @@
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /tmp/fm-lab.PAZkJo
+WARNING: watcher still down (same stale episode; last beat: never, grace 300s) - full banner already printed this episode.
+spawned nocat-luna harness=codex kind=scout window=primary:fm-nocat-luna worktree=/home/everett/.treehouse/proj-6970b8/3/proj
+exit=0

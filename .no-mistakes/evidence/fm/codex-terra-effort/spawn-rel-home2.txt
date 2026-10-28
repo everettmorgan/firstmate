@@ -1,0 +1,3 @@
+WARNING: watcher still down (same stale episode; last beat: never, grace 300s) - full banner already printed this episode.
+spawned rel-home harness=codex kind=scout window=primary:fm-rel-home worktree=/home/everett/.treehouse/proj-6970b8/2/proj
+exit=0

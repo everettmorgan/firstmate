@@ -1,0 +1,4 @@
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /tmp/fm-lab.PAZkJo
+WARNING: watcher still down (same stale episode; last beat: never, grace 300s) - full banner already printed this episode.
+error: Codex ultra cannot be validated with config/launch-env-allowlist because the destination Codex home is unknown before launch
+exit=1
