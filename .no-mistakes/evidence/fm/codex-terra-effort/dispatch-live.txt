@@ -1,0 +1,55 @@
+
+$ dispatch gpt-6.1-terra max with missing Codex catalog
+exit=0
+dispatch-resolve:
+  status: clear
+  model: fixture   latency_ms: 5   tokens: 1/1
+  rule: rule_1 (Perform a focused fix.)   confidence: 0.99
+  probabilities: rule_1=0.99 default=0.01
+  note: rule matched
+  candidate: codex:gpt-6.1-terra  provider=codex  -> eligible (quota ranking off: home declares a single shared quota)
+  profile: --harness 'codex' --model 'gpt-6.1-terra' --effort 'max'
+
+
+$ dispatch gpt-6.1-terra ultra with missing Codex catalog
+exit=0
+dispatch-resolve:
+  status: clear
+  model: fixture   latency_ms: 4   tokens: 1/1
+  rule: rule_1 (Perform a focused fix.)   confidence: 0.99
+  probabilities: rule_1=0.99 default=0.01
+  note: rule matched
+  candidate: codex:gpt-6.1-terra  provider=codex  -> eligible (quota ranking off: home declares a single shared quota)
+  profile: --harness 'codex' --model 'gpt-6.1-terra' --effort 'ultra'
+
+
+$ dispatch unrelated Claude profile alongside unavailable Codex ultra catalog
+exit=0
+dispatch-resolve:
+  status: clear
+  model: fixture   latency_ms: 4   tokens: 1/1
+  rule: rule_1 (Perform a focused fix.)   confidence: 0.99
+  probabilities: rule_1=0.99 default=0.01
+  note: rule matched
+  candidate: claude:sonnet  provider=claude  -> eligible (quota ranking off: home declares a single shared quota)
+  candidate: codex:gpt-6.1-terra  provider=codex  -> eligible (quota ranking off: home declares a single shared quota)
+  profile: --harness 'claude' --model 'sonnet' --effort 'high'
+
+
+$ dispatch unrelated Claude profile alongside stale Codex ultra catalog
+exit=0
+dispatch-resolve:
+  status: clear
+  model: fixture   latency_ms: 5   tokens: 1/1
+  rule: rule_1 (Perform a focused fix.)   confidence: 0.99
+  probabilities: rule_1=0.99 default=0.01
+  note: rule matched
+  candidate: claude:sonnet  provider=claude  -> eligible (quota ranking off: home declares a single shared quota)
+  candidate: codex:gpt-6.1-terra  provider=codex  -> eligible (quota ranking off: home declares a single shared quota)
+  profile: --harness 'claude' --model 'sonnet' --effort 'high'
+
+
+$ reject ultra with no explicit Codex model
+exit=2
+error: malformed rules file: /home/everett/.no-mistakes/worktrees/c0a06c949f51/01M6C1NKK0KHGMYKZPZACMBCH5/.test-dispatch-lab/home/config/crew-dispatch.json - each use profile effort must be supported by its harness and model
+

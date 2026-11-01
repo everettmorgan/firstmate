@@ -1,0 +1,20 @@
+
+--- unsupported-ultra ---
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /home/everett/.no-mistakes/worktrees/c0a06c949f51/01M6C1NKK0KHGMYKZPZACMBCH5/.test-lab/fm-lab.k5WH3U
+error: codex ultra requires an explicit model advertising ultra in the installed Codex catalog
+exit=1 metadata=absent
+
+--- missing-relative-ultra ---
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /home/everett/.no-mistakes/worktrees/c0a06c949f51/01M6C1NKK0KHGMYKZPZACMBCH5/.test-lab/fm-lab.k5WH3U
+error: codex ultra cannot be validated: the installed Codex model catalog /home/everett/.no-mistakes/worktrees/c0a06c949f51/01M6C1NKK0KHGMYKZPZACMBCH5/.test-lab/missing/models_cache.json is unavailable
+exit=1 metadata=absent
+
+--- filtered-ultra ---
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /home/everett/.no-mistakes/worktrees/c0a06c949f51/01M6C1NKK0KHGMYKZPZACMBCH5/.test-lab/fm-lab.k5WH3U
+error: Codex ultra cannot be validated with config/launch-env-allowlist because the destination Codex home is unknown before launch
+exit=1 metadata=absent
+
+--- filtered-max ---
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /home/everett/.no-mistakes/worktrees/c0a06c949f51/01M6C1NKK0KHGMYKZPZACMBCH5/.test-lab/fm-lab.k5WH3U
+error: Codex max cannot be validated with config/launch-env-allowlist because the destination Codex home is unknown before launch
+exit=1 metadata=absent

@@ -1,0 +1,53 @@
+--- Catalog-supported Terra max spawn ---
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /home/evere
+tt/.no-mistakes/worktrees/c0a06c949f51/01M6C1NKK0KHGMYKZPZACMBCH5/zJhF8r
+WARNING: watcher still down (same stale episode; last beat: never, grace 300s) -
+ full banner already printed this episode.
+spawned terramax harness=codex kind=scout window=primary:fm-terramax worktree=/h
+ome/everett/.no-mistakes/worktrees/c0a06c949f51/01M6C1NKK0KHGMYKZPZACMBCH5/zJhF8
+r/pool/.treehouse/project-4c2038/5/project
+
+exit=0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+model=gpt-6.1-terra
+model_reasoning_effort="max"
+CODEX_HOME=/home/everett/.no-mistakes/worktrees/c0a06c949f51/01M6C1NKK0KHGMYKZPZACMBCH5/zJhF8r/codex-home
+--- Supported relative-home relaunch attempt ---
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /home/evere
+tt/.no-mistakes/worktrees/c0a06c949f51/01M6C1NKK0KHGMYKZPZACMBCH5/zJhF8r
+error: task labscout's composer state is 'unknown', not proven empty; refusing t
+o type the /quit exit command because it could concatenate onto existing text. C
+lear the composer, then retry 'relaunch'
+error: relaunch of labscout failed while stopping the old agent, which is still
+running; its original instructions were restored
+
+exit=1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

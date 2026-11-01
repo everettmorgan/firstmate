@@ -1,0 +1,96 @@
+
+--- lunacheck ---
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /home/evere
+tt/.no-mistakes/worktrees/c0a06c949f51/01M6C1NKK0KHGMYKZPZACMBCH5/zJhF8r
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+●  WATCHER DOWN - SUPERVISION IS OFF
+●  1 task(s) in flight, but no watcher has a fresh beacon (last beat: never, gra
+ce 300s).
+●  Trust the emitted supervision protocol for this harness; do not use shell & f
+or watcher repair.
+●  This is a supervision warning only; the guarded operation WILL still run.
+●  repair missing watcher supervision according to the session-start block for t
+his harness; do not use shell &.
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+spawned luna harness=codex kind=scout window=primary:fm-luna worktree=/home/ever
+ett/.no-mistakes/worktrees/c0a06c949f51/01M6C1NKK0KHGMYKZPZACMBCH5/zJhF8r/pool/.
+treehouse/project-4c2038/2/project
+
+exit=0
+
+
+
+
+
+
+
+
+
+--- omitcheck ---
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /home/evere
+tt/.no-mistakes/worktrees/c0a06c949f51/01M6C1NKK0KHGMYKZPZACMBCH5/zJhF8r
+WARNING: watcher still down (same stale episode; last beat: never, grace 300s) -
+ full banner already printed this episode.
+warning: cannot confirm codex model 'gpt-5' supports max from the installed cata
+log; omitting max
+spawned omit harness=codex kind=scout window=primary:fm-omit worktree=/home/ever
+ett/.no-mistakes/worktrees/c0a06c949f51/01M6C1NKK0KHGMYKZPZACMBCH5/zJhF8r/pool/.
+treehouse/project-4c2038/3/project
+
+exit=0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--- relativecheck2 ---
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /home/evere
+tt/.no-mistakes/worktrees/c0a06c949f51/01M6C1NKK0KHGMYKZPZACMBCH5/zJhF8r
+WARNING: watcher still down (same stale episode; last beat: never, grace 300s) -
+ full banner already printed this episode.
+spawned relative harness=codex kind=scout window=primary:fm-relative worktree=/h
+ome/everett/.no-mistakes/worktrees/c0a06c949f51/01M6C1NKK0KHGMYKZPZACMBCH5/zJhF8
+r/pool/.treehouse/project-4c2038/4/project
+
+exit=0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+filtered Luna actual Codex pid=1594136
+model=gpt-5.6-luna
+effort=model_reasoning_effort="max"
+CODEX_HOME=/home/everett/.no-mistakes/worktrees/c0a06c949f51/01M6C1NKK0KHGMYKZPZACMBCH5/zJhF8r/codex-home
+
+unsupported max actual Codex pid=1600489
+model=gpt-5
+effort=omitted
+CODEX_HOME=/home/everett/.no-mistakes/worktrees/c0a06c949f51/01M6C1NKK0KHGMYKZPZACMBCH5/zJhF8r/codex-home
+
+relative ultra actual Codex pid=1605454
+model=gpt-6.1-terra
+effort=model_reasoning_effort="ultra"
+CODEX_HOME=/home/everett/.no-mistakes/worktrees/c0a06c949f51/01M6C1NKK0KHGMYKZPZACMBCH5/zJhF8r/codex-home

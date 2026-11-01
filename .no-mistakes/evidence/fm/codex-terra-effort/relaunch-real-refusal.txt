@@ -1,0 +1,53 @@
+--- Unsupported relaunch ---
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /home/evere
+tt/.no-mistakes/worktrees/c0a06c949f51/01M6C1NKK0KHGMYKZPZACMBCH5/zJhF8r
+error: codex ultra requires an explicit model advertising ultra in the installed
+ Codex catalog
+
+exit=1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--- Existing Codex worker process after refusal ---
+pid=1568257, same native Codex worker observed before refusal
+
+--- Existing worker pane after refusal ---
+  Welcome to Codex, OpenAI's command-line coding agent
+
+  Choose how you want to use Codex.
+
+> 1. Sign in with ChatGPT
+     Usage included with Plus, Pro, Business, and Enterprise plans
+
+  2. Sign in with Device Code
+     Sign in from another device with a one-time code
+
+  3. Use an OpenAI API key
+     Pay for what you use
+
+  4. Use Amazon Bedrock
+     Connect using your AWS credentials
+
+  Press enter to continue
+
+
+
+
+
+
+

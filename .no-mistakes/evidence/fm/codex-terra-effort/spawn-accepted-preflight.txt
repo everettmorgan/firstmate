@@ -1,0 +1,10 @@
+
+--- filtered-luna ---
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /home/everett/.no-mistakes/worktrees/c0a06c949f51/01M6C1NKK0KHGMYKZPZACMBCH5/.test-lab/fm-lab.k5WH3U
+error: task filtered-luna has no brief at inaccessible data path /home/everett/.no-mistakes/worktrees/c0a06c949f51/01M6C1NKK0KHGMYKZPZACMBCH5/.test-lab/fm-lab.k5WH3U/data/filtered-luna/brief.md
+exit=1
+
+--- supported-ultra ---
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /home/everett/.no-mistakes/worktrees/c0a06c949f51/01M6C1NKK0KHGMYKZPZACMBCH5/.test-lab/fm-lab.k5WH3U
+error: task supported-ultra has no brief at inaccessible data path /home/everett/.no-mistakes/worktrees/c0a06c949f51/01M6C1NKK0KHGMYKZPZACMBCH5/.test-lab/fm-lab.k5WH3U/data/supported-ultra/brief.md
+exit=1
