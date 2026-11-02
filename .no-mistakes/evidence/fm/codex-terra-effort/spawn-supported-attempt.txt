@@ -1,0 +1,31 @@
+/tmp/fm-lab.tLE5Ro
+
+$ CODEX_HOME=.test-lab-spawn/catalog fm-spawn.sh supported <disposable-project> --mode local-only --yolo off --harness codex --model gpt-6.1-terra --effort ultra
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /tmp/fm-lab.tLE5Ro
+warning: /tmp/fm-lab.tLE5Ro/data/supported/launch-brief.md records no ship branch; defaulting to legacy branch fm/supported
+warning: /tmp/fm-lab.tLE5Ro/data/supported/launch-brief.md records no delivery contract line (scaffolded before ship briefs recorded one); launching on the explicit --mode local-only - confirm its definition of done matches
+notice: supported ships mode=local-only while the standing posture for project is no-mistakes - less rigor than the captain's standing posture; proceed only on a current explicit captain instruction or an intake judgment you can state
+spawned supported harness=codex kind=ship mode=local-only yolo=off window=primary:fm-supported worktree=/home/everett/.treehouse/project-a50392/1/project
+exit=0
+
+Task metadata:
+window=primary:fm-supported
+endpoint_task_id=supported
+worktree=/home/everett/.treehouse/project-a50392/1/project
+project=/home/everett/.no-mistakes/worktrees/c0a06c949f51/01M6EE338ATKVBC100CY661XCJ/.test-lab-spawn/project
+harness=codex
+approval_mode=bypass
+kind=ship
+mode=local-only
+yolo=off
+branch=fm/supported
+tasktmp=/tmp/fm-supported
+model=gpt-6.1-terra
+effort=ultra
+spawn_gen=s1793633769.2609531.7812
+
+Private tmux panes:
+primary:claude claude /home/everett/.no-mistakes/worktrees/c0a06c949f51/01M6EE338ATKVBC100CY661XCJ
+primary:fm-supported node /home/everett/.treehouse/project-a50392/1/project
+
+Worker pane:

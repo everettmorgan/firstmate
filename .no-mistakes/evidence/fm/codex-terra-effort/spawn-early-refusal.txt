@@ -1,0 +1,16 @@
+/tmp/fm-lab.DCj7fv
+
+$ fm-spawn.sh unsupported <disposable-project> --mode local-only --yolo off --harness codex --model gpt-5 --effort ultra
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /tmp/fm-lab.DCj7fv
+error: codex ultra requires an explicit model advertising ultra in the installed Codex catalog
+exit=1 metadata=absent tmux_windows=claude
+
+$ fm-spawn.sh missing <disposable-project> --mode local-only --yolo off --harness codex --model gpt-6.1-terra --effort ultra
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /tmp/fm-lab.DCj7fv
+error: codex ultra cannot be validated: the installed Codex model catalog /tmp/fm-lab.DCj7fv/missing/models_cache.json is unavailable
+exit=1 metadata=absent tmux_windows=claude
+
+$ fm-spawn.sh filtered <disposable-project> --mode local-only --yolo off --harness codex --model gpt-6.1-terra --effort ultra
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /tmp/fm-lab.DCj7fv
+error: Codex ultra cannot be validated with config/launch-env-allowlist because the destination Codex home is unknown before launch
+exit=1 metadata=absent tmux_windows=claude

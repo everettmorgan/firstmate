@@ -1,0 +1,35 @@
+$ CODEX_HOME=<supported> bin/fm-harness.sh codex-supports terra ultra
+exit=0
+
+$ CODEX_HOME=<supported> bin/fm-harness.sh validate-native-effort codex terra ultra
+exit=0
+
+$ CODEX_HOME=<supported> bin/fm-harness.sh codex-supports terra max
+exit=0
+
+$ CODEX_HOME=<supported> bin/fm-harness.sh codex-supports other ultra
+exit=1
+
+$ CODEX_HOME=<supported> bin/fm-harness.sh validate-native-effort codex other ultra
+error: codex ultra requires an explicit model advertising ultra in the installed Codex catalog
+exit=1
+
+$ CODEX_HOME=<supported> bin/fm-harness.sh codex-supports other max
+exit=1
+
+$ CODEX_HOME=<malformed> bin/fm-harness.sh codex-supports terra ultra
+exit=1
+
+$ CODEX_HOME=<malformed> bin/fm-harness.sh validate-native-effort codex terra ultra
+error: codex ultra cannot be validated: the installed Codex model catalog /home/everett/.no-mistakes/worktrees/c0a06c949f51/01M6EE338ATKVBC100CY661XCJ/.effort-check.r4g10rje/malformed/models_cache.json is unavailable
+exit=1
+
+$ CODEX_HOME=<missing> bin/fm-harness.sh codex-supports terra ultra
+exit=1
+
+$ CODEX_HOME=<missing> bin/fm-harness.sh validate-native-effort codex terra ultra
+error: codex ultra cannot be validated: the installed Codex model catalog /home/everett/.no-mistakes/worktrees/c0a06c949f51/01M6EE338ATKVBC100CY661XCJ/.effort-check.r4g10rje/missing/models_cache.json is unavailable
+exit=1
+
+$ CODEX_HOME=<missing> bin/fm-harness.sh codex-supports gpt-5.6-luna max
+exit=0

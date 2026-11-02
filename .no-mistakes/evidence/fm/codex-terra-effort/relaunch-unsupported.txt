@@ -1,0 +1,45 @@
+Before: node pid=2609235
+error: codex ultra requires an explicit model advertising ultra in the installed Codex catalog
+Relaunch exit code: 1
+After: node pid=2609235
+Visible worker pane after refusal:
+╭─────────────────────────────────────────────────╮
+│ ✨ Update available! 0.165.0 -> 0.166.0         │
+│ Run npm install -g @openai/codex to update.     │
+│                                                 │
+│ See full release notes:                         │
+│ https://github.com/openai/codex/releases/latest │
+╰─────────────────────────────────────────────────╯
+
+
+  >_ OpenAI Codex (v0.165.0)
+     ~/.no-mistakes/worktrees/c0a06c949f51/01M6EE338ATKVBC100CY661XCJ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+» Ask Codex to do anything
+
+  GPT-6.1 Terra ultra · ~/.no-mistakes/worktrees/c0a06c949f51/01M6EE338ATKVBC100CY661XCJ
+  ? for shortcuts                                                                                                  ⚠ 1 warning · f2 to view
